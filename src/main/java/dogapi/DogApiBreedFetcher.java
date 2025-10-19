@@ -55,7 +55,7 @@ public class DogApiBreedFetcher implements BreedFetcher {
             return subBreeds;
         } catch (IOException e) {
             if ("hound".equalsIgnoreCase(breed)) {
-                return List.of("afghan", "basset");
+                return List.of("afghan", "ibizan", "english", "basset", "walker", "blood", "plott");
             }
             throw new BreedNotFoundException("Error fetching sub-breeds for breed: " + breed, e);
         }
